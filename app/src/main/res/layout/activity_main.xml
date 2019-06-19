@@ -16,49 +16,96 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <LinearLayout
-            android:layout_width="341dp"
+        <ScrollView
+            android:layout_width="344dp"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="31dp" />
-
-            <TextView
-                android:id="@+id/titulo_main"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:textAlignment="center"
-                android:textAppearance="@android:style/TextAppearance.Large"
-                android:textSize="30sp" />
+                android:orientation="vertical">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="33dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp" />
 
-            <EditText
-                android:id="@+id/txtNombreUsuario_main"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Nombre de usuario"
-                android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/titulo_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textSize="30sp" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="33dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp" />
 
-            <EditText
-                android:id="@+id/txtPass_main"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Contraseña"
-                android:inputType="textPassword" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inpNombreUsuario_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp">
 
-        </LinearLayout>
+                    <EditText
+                        android:id="@+id/txtNombreUsuario_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:ems="10"
+                        android:hint="Nombre de usuario"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inpPass_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <EditText
+                        android:id="@+id/txtPass_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:ems="10"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp" />
+
+                <Button
+                    android:id="@+id/btnIngresar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="INGRESAR"
+                    android:textColor="@color/design_default_color_background"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <Button
+                    android:id="@+id/btnRegistrarse_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:onClick="onClick_Registrar"
+                    android:text="REGISTRARSE"
+                    android:textColor="@color/design_default_color_background"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary" />
+
+            </LinearLayout>
+        </ScrollView>
 
         <Space
             android:layout_width="wrap_content"
