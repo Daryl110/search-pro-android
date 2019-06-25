@@ -17,7 +17,7 @@
             android:layout_weight="1" />
 
         <ScrollView
-            android:layout_width="253dp"
+            android:layout_width="548dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
                     android:text="INGRESAR"
-                    android:textColor="@color/design_default_color_background"/>
+                    android:textColor="@color/design_default_color_background" />
 
                 <Space
                     android:layout_width="match_parent"
