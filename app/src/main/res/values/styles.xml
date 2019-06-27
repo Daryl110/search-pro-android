@@ -12,6 +12,24 @@
        <item name="android:background">
            @drawable/flat_button
        </item>
+        <item name="android:textColor">
+            @color/colorPrimary
+        </item>
+    </style>
+
+    <style name="confirmButton" >
+        <item name="android:textColor">
+            @color/design_default_color_background
+        </item>
+        <item name="android:background">
+            @color/colorPrimary
+        </item>
+    </style>
+
+    <style name="linkButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">
+            @color/colorLink
+        </item>
     </style>
 
 </resources>

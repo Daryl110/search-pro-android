@@ -67,7 +67,7 @@
                     android:layout_height="70dp">
 
                     <EditText
-                        android:id="@+id/txtPass_main"
+                        android:id="@+id/txtPassword_main"
                         android:layout_width="match_parent"
                         android:layout_height="51dp"
                         android:ems="10"
@@ -84,6 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
+                    android:onClick="onClick_Ingresar"
                     android:text="INGRESAR"
                     android:textColor="@color/design_default_color_background" />
 
